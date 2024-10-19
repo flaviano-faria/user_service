@@ -3,7 +3,7 @@ Demonstrate a sample CRUD using Java, JPA, Spring and hexagonal architecture.
 Steps to configure development environment
 
 Execute mysql database:<br />
-docker run -d --name mysql -e MYSQL_ROOT_PASSWORD={password}<br />
+docker run -d --name mysql -e MYSQL_ROOT_PASSWORD={password} {container_id}<br />
 Execute docker container ls to get container id<br />
 docker exec -it {container_id} bash<br />
 Inside container you can start mysql:<br />
