@@ -1,0 +1,19 @@
+openapi: "3.0.2"
+info:
+  title: API Title
+  version: "1.0"
+servers:
+  - url: https://localhost:8080/userservice
+paths:
+  /test:
+    get:
+      responses:
+        '200':
+          description: OK
+  /create:
+    post:
+      description: "OK"
+      responses:
+        "200":
+          description: "OK"
+  
