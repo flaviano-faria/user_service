@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import com.userservice.adapter.repositories.SpringUserRepository;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.userservice.configuration, com.userservice.controller")
+@ComponentScan(basePackages = "com.userservice.configuration, com.userservice.controller, com.userservice.adapter.repositories")
 @EnableJpaRepositories (basePackageClasses = SpringUserRepository.class)
 @EntityScan(basePackages = {"com.userservice.adapters.entity"}) 
 public class UserservicerefApplication {

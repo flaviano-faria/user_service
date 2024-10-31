@@ -26,6 +26,9 @@ public class UserEntity {
 		this.password = password;
 	}
 	
+	public UserEntity() {
+	}
+	
 	public void update(String userId, String password) {
 		this.userId = userId;
 		this.password = password;
