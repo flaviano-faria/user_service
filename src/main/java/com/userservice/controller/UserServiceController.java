@@ -1,7 +1,10 @@
 package com.userservice.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.userservice.domain.dto.UserDTO;
 import com.userservice.domain.ports.interfaces.UsuarioServicePort;
 
 
@@ -17,8 +20,8 @@ public class UserServiceController {
 	
 	
 	@PostMapping(value = "/create")
-	public void createUser() {
-		usuarioServicePort.insertUser(null);
+	public void createUser(@RequestBody UserDTO userDTO) {
+		usuarioServicePort.insertUser(userDTO);
 		System.out.println("test");
 	}
 

@@ -2,6 +2,7 @@ package com.userservice.adapter.repositories;
 
 import org.springframework.stereotype.Component;
 
+import com.userservice.adapters.entity.UserEntity;
 import com.userservice.domain.dto.UserDTO;
 import com.userservice.ports.repositories.UserRepositoryPort;
 
@@ -16,8 +17,11 @@ public class UserRepository implements UserRepositoryPort{
 	
 	@Override
 	public void insertUser(UserDTO userDTO) {
-		springUserRepository.save(null);
 		
+		UserEntity userEntity = new UserEntity(
+				userDTO.getUserId(), userDTO.getPassword());
+		
+		springUserRepository.save(userEntity);
 	}
 
 }
