@@ -31,6 +31,12 @@ public class UserDTO {
 	public UserDTO() {
 	}
 	
+	public UserDTO(long id,String userId, String password) {
+		this.id = id;
+		this.userId = userId;
+		this.password = password;
+	}
+	
 	
 	
 }

@@ -1,5 +1,7 @@
 package com.userservice.adapter.repositories;
 
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import com.userservice.adapters.entity.UserEntity;
@@ -22,6 +24,12 @@ public class UserRepository implements UserRepositoryPort{
 				userDTO.getUserId(), userDTO.getPassword());
 		
 		springUserRepository.save(userEntity);
+	}
+
+	@Override
+	public List<UserEntity> listAll() {
+		
+		return springUserRepository.findAll();
 	}
 
 }

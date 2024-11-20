@@ -1,10 +1,15 @@
 package com.userservice.adapters.entity;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.userservice.domain.dto.UserDTO;
 
 @Entity
 @Table(name = "user")
@@ -32,6 +37,19 @@ public class UserEntity {
 	public void update(String userId, String password) {
 		this.userId = userId;
 		this.password = password;
+	}
+	
+
+	public long getId() {
+		return id;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public String getPassword() {
+		return password;
 	}
 
 }

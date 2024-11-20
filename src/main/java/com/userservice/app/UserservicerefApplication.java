@@ -14,6 +14,7 @@ import com.userservice.adapter.repositories.SpringUserRepository;
 public class UserservicerefApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(UserservicerefApplication.class, args);
 	}
 
