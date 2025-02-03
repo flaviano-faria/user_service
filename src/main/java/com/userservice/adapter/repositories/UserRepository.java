@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.userservice.adapters.entity.UserEntity;
 import com.userservice.domain.dto.UserDTO;
-import com.userservice.ports.repositories.UserRepositoryPort;
+import com.userservice.domain.ports.repositories.UserRepositoryPort;
 
 @Component
 public class UserRepository implements UserRepositoryPort{

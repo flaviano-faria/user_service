@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.userservice.adapters.entity.UserEntity;
 import com.userservice.domain.dto.UserDTO;
 import com.userservice.domain.ports.interfaces.UsuarioServicePort;
-import com.userservice.ports.repositories.UserRepositoryPort;
+import com.userservice.domain.ports.repositories.UserRepositoryPort;
 
 @Service
 public class UserServiceImpl implements UsuarioServicePort{

@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.userservice.domain.adapter.service.UserServiceImpl;
 import com.userservice.domain.ports.interfaces.UsuarioServicePort;
-import com.userservice.ports.repositories.UserRepositoryPort;
+import com.userservice.domain.ports.repositories.UserRepositoryPort;
 
 @Configuration
 public class UserServiceBeanConfig {

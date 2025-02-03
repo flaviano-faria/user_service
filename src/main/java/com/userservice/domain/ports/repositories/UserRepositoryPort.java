@@ -1,4 +1,4 @@
-package com.userservice.ports.repositories;
+package com.userservice.domain.ports.repositories;
 
 import java.util.List;
 
